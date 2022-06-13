@@ -16,6 +16,7 @@ int main()
     for (int k = 1; k <= 30; k+=2)
     {
         cout << endl << tabla << " \033[1;34mX\033[0m " << k << " \033[1;31m=\033[0m " << (tabla * k);
+        // Agregado "\033[1;34m" para salida a color en la terminal.
     }
     return 0;
 }
