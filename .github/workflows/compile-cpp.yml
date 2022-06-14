@@ -1,4 +1,4 @@
-name: Setup C/C++ Compiler
+- name: Setup C/C++ Compiler
 on:
   pull_request:
     branches:
