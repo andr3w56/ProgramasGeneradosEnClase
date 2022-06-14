@@ -14,7 +14,7 @@ int main()
         int i = 1;
         while (i <= 10)
         {
-            cout << "\n" << tabla << " \033[1;31mX\033[0m " << i << " = " << (tabla * i);
+            cout << "\n" << tabla << " X " << i << " = " << (tabla * i);
             i++;
         }
     }
