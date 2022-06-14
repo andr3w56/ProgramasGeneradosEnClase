@@ -13,7 +13,7 @@ int tabla;
     {
     while (i <= 10)
      {
-        cout << "\n" << tabla << " \033[1;31mX\033[0m " << i << " = " << (tabla * i) << endl;
+        cout << "\n" << tabla << " X " << i << " = " << (tabla * i) << endl;
         i++;
      }
     }
