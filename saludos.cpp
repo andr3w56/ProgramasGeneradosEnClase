@@ -7,13 +7,15 @@ using namespace std;
 //Una function recibe como parámetro un entero que representa
 //una tabla de multiplicar. La function debe imprimir la tabla
 //de multiplicar. Desde el main, llame tres veces esta función.
-void Tabla(int n)
+void tablaMultiplicar (int tabla)
 {
-    cout << "\nTabla del " << n;
-    for (int i = 1; i < 10; i++)
+    cout<<endl<<"La tabla del: "<<tabla;
+    for(int i=1; i<=12; i++)
     {
-        cout << "\n" << n << " X " << i << " = " << (n * i);
+        cout<<endl<<tabla << " x " <<i << " = " <<(tabla*i);
     }
+    cout<<endl;
+
 }
 
 //Una función recibe como parámetro un entero que representa un mes de año
@@ -68,8 +70,9 @@ int main()
     cout << endl << "El primer mes es: " << NombreMes(1);
     cout << endl << "El decimo mes es: " << NombreMes(10);
     cout << endl << "El septimo mes es: " << NombreMes(7);
-    cout << Tabla(5);
-    cout << Tabla(2);
-    cout << Tabla(3);
+
+    tablaMultiplicar(5);
+    tablaMultiplicar(2);
+    tablaMultiplicar(3);
     return 0;
 }
