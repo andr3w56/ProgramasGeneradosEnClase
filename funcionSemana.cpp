@@ -49,7 +49,7 @@ string TotalDias(int mes)
 
 * * * * * * * * * */
 
-string Filas(int f)
+void Filas(int f)
 {
     int i;
     while (i < f)
@@ -123,7 +123,6 @@ int main()
     cout << "\nEl dia de la semana es: " << Semana(4);
     cout << "\nEl dia de la semana es: " << Semana(6);
     
-
     Filas(5);
     cout << "\n";
     DevolverFactorial(6);
