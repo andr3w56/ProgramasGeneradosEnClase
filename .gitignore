@@ -1,2 +1,7 @@
 # Ignorando todo los archivos ejecutable .exe
 *.exe
+# Ignorar carpetas innecesarias
+.vscode/
+.idea/
+CMakeLists.txt
+cmake-build-debug/
