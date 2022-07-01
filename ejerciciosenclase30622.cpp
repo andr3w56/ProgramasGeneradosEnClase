@@ -28,6 +28,16 @@ void Entero(int n){
     cout << "\n" <<  n << " x " << i << " = " << (n*i);
   }
 }
+/*3. Escriba la función que determina si un número pasado como parámetro es par o impar.*/
+void Multiplode2(int mult2){
+  cout << "\n\nEjercicio 3:";
+  if (mult2 % 2 == 0){
+    cout << "\n" << mult2 << " Es par";
+  }
+  else{
+    cout << "\n" << mult2 << " Es impar";
+  }
+}
 /*4. Escriba la función que determina si un número pasado como parámetro es múltiplo de 5*/
 void Multiplode5(int mult){
   cout << "\n\nEjercicio 4:";
@@ -75,7 +85,7 @@ Tabla del 3
 
 3 x 10 = 30*/
 void Tablas(int final){
-  cout << "\n\nEjercicio 11";
+  cout << "\n\nEjercicio 11:";
   if (final >= 1; final <= 10){
     for (int i = 1; i <= final; i++)
       for (int k = 1; k <= final; k++){
@@ -114,7 +124,7 @@ void Tiempo(){
     auto tm = *localtime(&t);
 
     std::ostringstream oss;
-    oss << put_time(&tm, "%d-%m-%Y %H-%M-%S");
+    oss << put_time(&tm, "%d-%m-%Y %H:%M:%S");
     auto str = oss.str();
 
     cout << str << endl;
@@ -128,9 +138,10 @@ void Intercambio(int r, int s){
   cout << r << " = " << s << endl;
 
 }
-/*24. Una función recibe 3 números enteros. 
+/*18. Una función recibe 3 números enteros. 
 La función devuelve verdadero si uno de esos números es la suma de los otros dos.*/
 void Sumadelos3(int f, int g, int h){
+  cout << "\n\nEjercicio 24:\n";
   if (f + g == h){
     cout << "Verdadero";
   }
@@ -140,15 +151,19 @@ void Sumadelos3(int f, int g, int h){
   else if (g + h == f){
     cout << "Verdadero";
   }
+  else{
+    cout << "Falso";
+  }
 }
 int main(int argc, char *argv[]) {
   Entero(5);
+  Multiplode2(60);
   Multiplode5(20);
   Tablas(3);
   Filas("*", 4);
   Tiempo();
   Intercambio(45, 50);
-  Sumadelos3(1, 2, 4);
+  Sumadelos3(5, 10, 5);
 
   return 0;
 }
