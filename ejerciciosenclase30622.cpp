@@ -76,10 +76,12 @@ Tabla del 3
 3 x 10 = 30*/
 void Tablas(int final){
   cout << "\n\nEjercicio 11";
-  int cont = 10;
-  for (int i = 1; i <= final; i++)
-  cout << "\n" << cont << " X " << i << " = " << (final * i) << endl;
-
+  if (final >= 1; final <= 10){
+    for (int i = 1; i <= final; i++)
+      for (int k = 1; k <= final; k++){
+        cout << "\n" << i << " X " << k << " = " << (i * k);
+    }
+  }
 }
 /*16. Una función recibe como parámetro un entero que indica las filas de una figura. 
 Adicionalmente, recibe como parámetro un string que indica el relleno de la figura a dibujar. 
@@ -126,7 +128,7 @@ void Intercambio(int r, int s){
   cout << r << " = " << s << endl;
 
 }
-/* . Una función recibe 3 números enteros. 
+/*24. Una función recibe 3 números enteros. 
 La función devuelve verdadero si uno de esos números es la suma de los otros dos.*/
 void Sumadelos3(int f, int g, int h){
   if (f + g == h){
@@ -142,11 +144,11 @@ void Sumadelos3(int f, int g, int h){
 int main(int argc, char *argv[]) {
   Entero(5);
   Multiplode5(20);
-  Tablas(5);
+  Tablas(3);
   Filas("*", 4);
   Tiempo();
   Intercambio(45, 50);
-  Sumadelos3(1, 2, 3);
+  Sumadelos3(1, 2, 4);
 
   return 0;
 }
