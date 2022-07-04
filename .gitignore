@@ -1,5 +1,6 @@
-# Ignorando todo los archivos ejecutable .exe
+# Ignorando todo los archivos ejecutables
 *.exe
+*.o
 # Ignorar carpetas innecesarias
 .vscode/
 .idea/
