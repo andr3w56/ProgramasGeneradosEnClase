@@ -1,22 +1,20 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-void re(int a){
-    for(int i = 1;i <= a;i++){
-        int b;
-        b = i % 2;
-        int y;
-        if (b == 1){
-            y = i * 1;
-            cout << endl << y;    
+void Recursion(int n){
+    int r = 0;
+    for(int i = 1 ; i <=  n; i ++){
+        if(i%2 == 0){
+            r += i;
+        }else{
+            r -= i;
         }
-        else{
-            y = i * -1;
-            cout << endl << y;
-        }
-    }   
+    }
+    cout << r << endl;
 }
-int main(){
-    re(5);
+int main(int argc, char const *argv[])
+{
+    Recursion(7);
     return 0;
 }

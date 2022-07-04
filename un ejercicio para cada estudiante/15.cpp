@@ -3,21 +3,21 @@
 using namespace std;
 
 
-void sumatoria(int n){
-	int resultado;
-	int factorial;
-	for(int f=2; f<=n; f++){
-		factorial=factorial*f;
-	    if(factorial % 2==0){
-		    resultado= factorial- resultado ;
+void ReFactorial(int n){
+	int r; long int f = 1;
+	for(int i = 2; i <= n; i++){
+		f *= i;
+	    if(f%2 == 0){
+		    r = (-f) - r;
 	    }
-	    else {
-		    resultado=  resultado + factorial ;
+	    else{
+		    r = f + r;
 	    }
 }   
-    cout<<"El resultado de la serie es: "<<resultado;
+    cout<<"El resultado de la serie es: "<< r << endl;
 }
-int main()
+int main(int argc, char const *argv[])
 {
-    sumatoria(7);
+	ReFactorial(7);
+	return 0;
 }
