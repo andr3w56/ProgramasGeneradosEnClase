@@ -4,4 +4,4 @@ cmake_minimum_required(VERSION 3.10)
 project(test)
 
 # add the executable
-add_executable(test.o HelloWord.cpp)
+add_executable(test.o variastablas.cpp)
