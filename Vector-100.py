@@ -5,7 +5,7 @@ def Notas():
     for i in range(0, 100):
         x[i] = random.randint(1, 10)
         print("La nota del estudiante", (i + 1), "es", x[i])
-    
+    print("La nota máxima es: 10")
     Sumatoria = 0
     for k in range(1, 100):
         nactual = x[k]
