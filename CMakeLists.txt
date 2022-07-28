@@ -4,4 +4,4 @@ cmake_minimum_required(VERSION 3.10)
 project(ProgramasGeneradosEnClase)
 
 # add the executable
-add_executable(Declaracion.o Declaracion.cpp)
+add_executable(Vector-100.o Vector-100.cpp)
