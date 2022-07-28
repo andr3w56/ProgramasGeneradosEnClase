@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 int main(int argc, const char** argv) {
     int x[5]; //Declaración de un vector de enteros.
