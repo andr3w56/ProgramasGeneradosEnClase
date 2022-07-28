@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]){
     int Sumatoria = 0;
     for (int i = 0; i < 100; i++){
         x[i] = NumeroRandom();
-        std::cout << "La nota del estudiante es: " << x[i] << std::endl; // Se llena el vector de numeros aleatorios.
+        std::cout << "La nota del estudiante " << i + 1 << " es: " << x[i] << std::endl; // Se llena el vector de numeros aleatorios.
         if (x[100] == 10){
             std::cout << "La nota máxima es: 10" << std::endl; // La nota máxima es 10.
         }
@@ -26,8 +26,9 @@ int main(int argc, char const *argv[]){
         int Nactual = x[k];
         Sumatoria += Nactual;
     }
+    float p = float(Sumatoria);
     std::cout << "La sumatoria total es: " << Sumatoria << std::endl;
-    std::cout << "El promedio es: " << ((Sumatoria) /= 10) << std::endl; // Se calcula la sumatoria y el promedio.
+    std::cout << "El promedio es: " << p / 10 << std::endl; // Se calcula la sumatoria y el promedio.
 
     return 0;
 }
